@@ -6,17 +6,17 @@ using System;
 
 public class movePuck : MonoBehaviour {
 
-    GameObject puck;
-    GameObject stick;
-    GameObject pole;
-    GameObject streak;
-    GameObject poleTopHitText;
-    GameObject fireworkText;
-    GameObject supernovaText;
-    GameObject bigStreak;
-    GameObject WindArea;
-    GameObject falcon;
-    GameObject poleTop;
+    public GameObject puck;
+    public GameObject stick;
+    public GameObject pole;
+    public GameObject streak;
+    public GameObject poleTopHitText;
+    public GameObject fireworkText;
+    public GameObject supernovaText;
+    public GameObject bigStreak;
+    public GameObject WindArea;
+    public GameObject falcon;
+    public GameObject poleTop;
     public GameObject nextPuck;
     public GameObject poleParticles;
     public GameObject firework;
@@ -24,30 +24,33 @@ public class movePuck : MonoBehaviour {
     public GameObject rightStick;
     public GameObject moonRock;
     public GameObject noGravityText;
-    windArea wind;
-    moveFalcon move_falcon;
-    private int windStrength;
-    private int windDirection;
-    Camera cam;
-    swipeUp swipe_up;
-    poleCollision pole_collision;
-    poleTopCollision pole_top_collision;
+    public int currentStreak;
+    public Material[] materials;
+    public AudioSource falconNoise;
+    
+    private Vector3 puckStartingPosition;
+    private Quaternion puckStartingRotation;
+    private Quaternion camStartingRotation;
     private float velocity, tilt;
     private bool createPuck;
     private bool uiOn;
     private bool particlesOn;
-    public int currentStreak;
-    AudioSource audioData;
-    public AudioSource falconNoise;
-    Animator animController;
-    public Material[] materials;
-    private Vector3 puckStartingPosition;
-    private Quaternion puckStartingRotation;
-    private Quaternion camStartingRotation;
-    Rigidbody rb;
-    Renderer rend;
+    private int windStrength;
+    private int windDirection; 
+    
     DateTime start, end;
     DateTime uiStart, uiEnd, particlesEnd;
+    
+    windArea wind;
+    moveFalcon move_falcon;
+    AudioSource audioData;
+    Animator animController;
+    Rigidbody rb;
+    Renderer rend;
+    Camera cam;
+    swipeUp swipe_up;
+    poleCollision pole_collision;
+    poleTopCollision pole_top_collision;
 
 
     void Start()

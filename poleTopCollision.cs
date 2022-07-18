@@ -6,8 +6,6 @@ using System;
 
 public class poleTopCollision : poleCollision
 {
-    private int poleTopReward;
-    private bool hasCollidedTop;
     public bool collisionsOnTop;
     public GameObject poleTopHitText;
     public GameObject fireworkReward;
@@ -19,6 +17,8 @@ public class poleTopCollision : poleCollision
     public GameObject CoastlineSnow;
     public GameObject CoastlineSand;
     public GameObject Pole;
+    private int poleTopReward;
+    private bool hasCollidedTop;
     AudioSource poleHitTopSound;
 
     void Start()
@@ -43,7 +43,6 @@ public class poleTopCollision : poleCollision
 
     void FixedUpdate()
     {
-
         if (hasCollidedTop)
         {
             Debug.Log("top of the pole has been hit!");

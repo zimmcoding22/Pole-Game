@@ -6,5 +6,5 @@ Pole Game is an addictive hypercasual iPhone game designed to emulate a real wor
 
 ## Installation
 
-Download free on Apple App Store. Works on most iPhones.
+Download free on Apple App Store. Works on most iPhones. You may have to search "Jake Zimmerman Pole Game" to find it.
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//reset position of stick after shot
 public class moveStickToStart : MonoBehaviour
 {
     public Transform[] target;
@@ -15,7 +16,6 @@ public class moveStickToStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("we are in the update function");
         if (transform.position != target[current].position)
         {
             Vector3 pos = Vector3.MoveTowards(transform.position, target[current].position, speed * Time.deltaTime);

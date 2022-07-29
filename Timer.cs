@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
 {
     float currentTime = 0f;
     float startingTime = 50f;
-    int sceneNo = 2;
+    int sceneNo = 2; //game over scene
     public bool startTimer = false;
 
     public Text countDownText;
